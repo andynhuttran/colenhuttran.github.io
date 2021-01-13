@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg');
+    background-image: url(images/background.gif);
     background-repeat: repeat-x repeat-y;
     color: #404040;
     font-size: 11pt;
