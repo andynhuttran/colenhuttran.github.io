@@ -49,7 +49,13 @@ blockquote {
 
 .copy-right {
     font-style: italic;    
-    font-size: 0.8em;        
+    font-size: 0.8em;     
+    direction: rtl;   
+}
+
+#div-copy-right {
+    width: 250px;
+    padding-left: 0px;
 }
 
 
