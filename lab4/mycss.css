@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#frm-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.section-class {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    clear: both;
+}
+
+.section-class p {
+    margin-bottom: 0;    
+}
+
+.section-class > input {
+    width: 340px;
+    font-size: 18px;
+}
+
+.input-small {
+    width: 100px;
+}
+
+.inline-group {    
+    float: left; 
+    margin-right: 18px;
+    margin-bottom: 2em;
+}
+
+.button-class {
+    margin-top: 2em;
+    clear: both;
+}
+
+

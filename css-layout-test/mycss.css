@@ -1,0 +1,31 @@
+#content {
+    float: right;
+    border: 2px solid bisque;
+    width: 500px;
+
+    padding: 2em;
+}
+
+#img-div img {
+    float: left;
+    margin: 2em 2em 1em 1em;
+}
+
+.comment-movie {
+    text-align: justify;
+}
+
+#div-bottom {    
+    border: 3px solid tomato;
+    margin: auto;
+}
+
+#div-bottom span {
+    border: 1px solid springgreen;
+}
+
+#div-bottom p {
+    border: 1px solid steelblue;    
+    text-align: center;
+}
+
