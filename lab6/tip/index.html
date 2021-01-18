@@ -4,14 +4,36 @@
 	CSE 190M, Summer 2012
 	This file is a tip calculator page using JavaScript.
 	--><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script>
+
 function calcTip() {
-	//var subtotalElem = 
-	//var tipElem = 
-	var totalElem = document.getElementById('total');
-	//var subtotal = 
-	//var tip = 
-	var total = 100000;
-	totalElem.innerHTML = '$' + total;
+	var subtotalElem = document.getElementById('subtotal');
+	var subtotal = parseFloat(subtotalElem.value);
+	if (isNaN(subtotal)) subtotal = 0.0;
+
+	var tipElem = document.getElementById('tip');
+	var tip = parseFloat(tipElem.value);
+	if (isNaN(tip)) tip = 0.0;
+
+	if (checkInput(subtotal, tip)){
+		let total = subtotal + (subtotal*tip)/100.0;
+
+		var totalElem = document.getElementById('total');
+		totalElem.innerHTML = '$' + total;
+	}
+}
+
+function checkInput(total, tip){
+	if (total <= 0){
+		alert("Total is invalid");
+		return false;
+	}
+
+	if (tip < 0){
+		alert("Tip is invalid");
+		return false;
+	}
+
+	return true;
 }
 
 </script>
