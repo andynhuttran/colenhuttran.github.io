@@ -30,7 +30,27 @@
         </div>
 
         <script>
-                        
+            var x = 1;
+
+            function f() {
+                var y = 0;
+                if (x == 1){
+                    y++;
+                }
+
+                var summ = function() {
+                    var z = 3;
+                    console.log(x + y + z);
+                }; // inner function closes over free variables x, y as it is declared
+
+                
+                return summ;
+            }
+
+            var g = f();
+            g(); // 1+10+3 is 14  
+            g();
+
         </script>
         
         
