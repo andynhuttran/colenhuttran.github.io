@@ -5,13 +5,23 @@
 }
 
 #container {
-    width: 500px;
+    width: 700px;
     margin: auto;
     border: 1px solid black;
     margin-top: 20px;
-    text-align: center;
+    
 }
 
 #container > h1 {
-    
+    text-align: center;
+}
+
+#content {
+    margin-top: 20px;
+}
+
+.comment {
+    border: 1px dashed blue;
+    width: 400px;
+    margin: auto;
 }
